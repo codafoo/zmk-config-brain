@@ -14,19 +14,42 @@
 ---
 include:
   # Ferris Sweep
-  - board: nice_nano_v2
-    shield: cradio_left
-  - board: nice_nano_v2
-    shield: cradio_right
-
+  # - board: nice_nano_v2
+  #   shield: cradio_left
+  # - board: nice_nano_v2
+  #   shield: cradio_right
   # Urchin https://github.com/duckyb/zmk-urchin
   - board: nice_nano_v2
     shield: urchin_left nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano_v2
     shield: urchin_right nice_view_adapter nice_view
-
-  # Brain https://github.com/Wesztman/brain
   - board: nice_nano_v2
-    shield: brain_left nice_view_adapter nice_view
+    shield: corne_left nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
-    shield: brain_right nice_view_adapter nice_view
+    shield: corne_right nice_view_adapter nice_view
+  - board: seeeduino_xiao_ble
+    shield: corne_dongle prospector_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # # Brain https://github.com/Wesztman/brain
+  # - board: nice_nano_v2
+  #   shield: brain_left nice_view_adapter nice_view
+  # - board: nice_nano_v2
+  #   shield: brain_right nice_view_adapter nice_view
+  # Totem (Shift)
+  - board: seeeduino_xiao_ble
+    shield: totem_left
+  - board: seeeduino_xiao_ble
+    shield: totem_right
+  - board: seeeduino_xiao_ble
+    shield: totem_dongle prospector_adapter
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  # Resets
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+  - board: nice_nano_v2
+    shield: settings_reset
