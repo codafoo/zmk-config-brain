@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
     - name: duckyb
       url-base: https://github.com/duckyb
       # nice-view-gem
@@ -19,6 +21,10 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: main
+    - name: zmk-fingerpunch-keyboards
+      remote: sadekbaroudi
+      revision: main
+      import: config/deps.yml
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
