@@ -11,6 +11,8 @@ manifest:
     - name: duckyb
       url-base: https://github.com/duckyb
       # nice-view-gem
+    - name: anywhy-io
+      url-base: https://github.com/anywhy-io
     - name: m165437
       url-base: https://github.com/M165437
   projects:
@@ -28,5 +30,7 @@ manifest:
     - name: urchin-zmk-module
       remote: duckyb
       revision: main
+    - name: flake-zmk-module
+      remote: anywhy-io
   self:
     path: config
